@@ -3,6 +3,9 @@ pipeline {
   tools {
       nodejs "node"
     }
+  environment {
+        EMAIL_RECIPIENTS = 'gishandesilva915@gmail.com'
+    }
   stages {
     stage('Checkout') {
       steps {
