@@ -1,6 +1,9 @@
 pipeline {
   agent any
   stages {
+    tools {
+      nodejs "node"
+    }
     stage('Checkout') {
       steps {
         git branch: 'main', url: ' https://github.com/Gishan-ui/8.2CDevSecOps.git'
