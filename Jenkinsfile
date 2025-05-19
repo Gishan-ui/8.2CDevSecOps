@@ -9,7 +9,7 @@ pipeline {
 
   environment {
         EMAIL_RECIPIENTS = 'gishandesilva915@gmail.com'
-    `   SNYK_TOKEN = credentials('SNYK_TOKEN')
+    `   SNYK_TOKEN = credentials("SNYK_TOKEN")
     }
 
 
