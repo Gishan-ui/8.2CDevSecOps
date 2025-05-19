@@ -16,7 +16,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'main', url: ' https://github.com/Gishan-ui/8.2CDevSecOps.git'
+        git branch: 'main', url: 'https://github.com/Gishan-ui/8.2CDevSecOps.git'
             }
           }
 
@@ -33,7 +33,7 @@ pipeline {
             script {
                     def testStatus = 'SUCCESS'
                     try {
-                      sh 'npm test || true' // Allows pipeline to continue despite test failures
+                      sh 'npm test' // Allows pipeline to continue despite test failures
                       }
                       catch (err) {
                         testStatus = 'FAILURE'
