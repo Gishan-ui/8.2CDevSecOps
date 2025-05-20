@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:18'  // Official Node.js image with npm included
-        }
-    }
+    agent any
     environment {
         RECIPIENTS = 'gishandesilva915@gmail.com' // Replace with your email
     }
