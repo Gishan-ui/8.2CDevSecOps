@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment {
         RECIPIENTS = 'gishandesilva915@gmail.com' // Replace with your email
+        SNYK_TOKEN = credentials('SNYK_TOKEN')
     }
     stages {
         stage('Checkout') {
